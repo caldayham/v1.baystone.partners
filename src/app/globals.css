@@ -1,28 +1,28 @@
 :root {
-  /* Primary Colors - Earthy, Natural Landscape Palette */
-  --color-primary: #2c5530;        /* Deep Forest Green */
-  --color-primary-light: #4a7c4e;  /* Lighter Green */
-  --color-primary-dark: #1a3a1d;   /* Darker Forest */
+  /* Primary Colors - Stark Black & White Palette */
+  --color-primary: #000000;        /* Jet Black */
+  --color-primary-light: #2a2a2a;  /* Dark Gray */
+  --color-primary-dark: #000000;   /* Jet Black */
 
   /* Secondary Colors */
-  --color-secondary: #8b7355;      /* Warm Earth Brown */
-  --color-secondary-light: #a68968; /* Light Earth */
+  --color-secondary: #4a4a4a;      /* Medium Gray */
+  --color-secondary-light: #6a6a6a; /* Light Medium Gray */
 
   /* Accent Colors */
-  --color-accent: #c9a961;         /* Golden Accent */
-  --color-accent-light: #e5c78a;   /* Light Gold */
+  --color-accent: #ffffff;         /* Pure White */
+  --color-accent-light: #f5f5f5;   /* Off White */
 
   /* Neutral Colors */
   --color-background: #ffffff;
-  --color-surface: #f8f7f4;        /* Warm Off-White */
-  --color-text: #2d2d2d;           /* Almost Black */
-  --color-text-light: #6b6b6b;     /* Medium Gray */
-  --color-text-muted: #9a9a9a;     /* Light Gray */
-  --color-border: #e0ddd8;         /* Subtle Border */
+  --color-surface: #fafafa;        /* Very Light Gray */
+  --color-text: #000000;           /* Jet Black */
+  --color-text-light: #4a4a4a;     /* Medium Gray */
+  --color-text-muted: #8a8a8a;     /* Light Gray */
+  --color-border: #e0e0e0;         /* Gray Border */
 
   /* Semantic Colors */
-  --color-success: #4a7c4e;
-  --color-error: #c94949;
+  --color-success: #000000;
+  --color-error: #000000;
   --color-white: #ffffff;
 
   /* Spacing Scale */
