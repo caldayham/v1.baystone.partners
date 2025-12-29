@@ -1,0 +1,128 @@
+.process {
+  padding: var(--spacing-3xl) var(--spacing-md);
+  background: var(--color-surface);
+}
+
+.container {
+  max-width: var(--max-width-container);
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  text-align: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.sectionSubtitle {
+  font-size: var(--font-size-xl);
+  color: var(--color-text-light);
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.stepsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-xl);
+}
+
+.stepCard {
+  background: var(--color-white);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.stepCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
+}
+
+.stepImagePlaceholder {
+  width: 100%;
+  height: 250px;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.stepNumber {
+  font-size: var(--font-size-6xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-white);
+  opacity: 0.9;
+}
+
+.stepContent {
+  padding: var(--spacing-xl);
+}
+
+.stepTitle {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  margin-bottom: var(--spacing-md);
+}
+
+.stepDescription {
+  font-size: var(--font-size-base);
+  color: var(--color-text-light);
+  line-height: 1.7;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .process {
+    padding: var(--spacing-2xl) var(--spacing-md);
+  }
+
+  .stepsGrid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .stepImagePlaceholder {
+    height: 200px;
+  }
+
+  .stepNumber {
+    font-size: var(--font-size-5xl);
+  }
+
+  .sectionTitle {
+    font-size: var(--font-size-3xl);
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .process {
+    padding: var(--spacing-xl) var(--spacing-sm);
+  }
+
+  .stepContent {
+    padding: var(--spacing-lg);
+  }
+
+  .stepTitle {
+    font-size: var(--font-size-xl);
+  }
+
+  .sectionTitle {
+    font-size: var(--font-size-2xl);
+  }
+
+  .stepImagePlaceholder {
+    height: 180px;
+  }
+
+  .stepNumber {
+    font-size: var(--font-size-4xl);
+  }
+}

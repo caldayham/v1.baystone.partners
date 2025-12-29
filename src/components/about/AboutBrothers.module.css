@@ -1,0 +1,137 @@
+.about {
+  padding: var(--spacing-3xl) var(--spacing-md);
+  background: var(--color-background);
+}
+
+.container {
+  max-width: var(--max-width-container);
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  text-align: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.sectionSubtitle {
+  font-size: var(--font-size-xl);
+  color: var(--color-text-light);
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.brothersCard {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 0;
+  align-items: center;
+  background: var(--color-white);
+  padding: var(--spacing-2xl);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+}
+
+.brotherInfo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-xl);
+  z-index: 1;
+}
+
+.brotherInfo:first-child {
+  text-align: right;
+  margin-right: -80px;
+}
+
+.brotherInfo:last-child {
+  text-align: left;
+  margin-left: -80px;
+}
+
+.brotherName {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: #000000;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 1),
+               0 0 4px rgba(255, 255, 255, 0.8),
+               0 0 6px rgba(255, 255, 255, 0.6);
+}
+
+.brotherRole {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: #000000;
+  margin-bottom: var(--spacing-xs);
+  text-shadow: 0 0 2px rgba(255, 255, 255, 1),
+               0 0 4px rgba(255, 255, 255, 0.8),
+               0 0 6px rgba(255, 255, 255, 0.6);
+}
+
+.brotherDescription {
+  font-size: var(--font-size-base);
+  color: #000000;
+  line-height: 1.7;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 1),
+               0 0 4px rgba(255, 255, 255, 0.8),
+               0 0 6px rgba(255, 255, 255, 0.6);
+}
+
+.photoContainer {
+  flex-shrink: 0;
+}
+
+.brothersPhoto {
+  width: 400px;
+  height: 400px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Tablet */
+@media (max-width: 968px) {
+  .brothersCard {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+    text-align: center;
+  }
+
+  .brotherInfo:first-child,
+  .brotherInfo:last-child {
+    text-align: center;
+  }
+
+  .photoContainer {
+    order: -1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .brothersPhoto {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .about {
+    padding: var(--spacing-xl) var(--spacing-sm);
+  }
+
+  .brothersCard {
+    padding: var(--spacing-lg);
+  }
+
+  .brothersPhoto {
+    width: 250px;
+    height: 250px;
+  }
+
+  .sectionTitle {
+    font-size: var(--font-size-3xl);
+  }
+}

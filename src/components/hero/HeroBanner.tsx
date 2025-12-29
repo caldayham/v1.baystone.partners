@@ -7,13 +7,10 @@ export default function HeroBanner() {
     <section className={styles.hero}>
       <div className={styles.heroContent}>
         <h1 className={styles.heroTitle}>
-          Transforming Outdoor Spaces Into
-          <span className={styles.heroAccent}> Living Masterpieces</span>
+          Quality Landscape Design in Palo Alto
         </h1>
         <p className={styles.heroSubtitle}>
-          The Bay's top up-and-coming landscape design firm.
-          Award-winning design that elevates your property's beauty and value.
-          Experience the Baystone difference with a complimentary consultation.
+          From the first on-site consultation to finding the right contractor, Baystone pushes to be the best solution for new homeowners in Palo Alto.
         </p>
         <button
           className={styles.heroCta}
